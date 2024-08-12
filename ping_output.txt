@@ -1,0 +1,35 @@
+
+Source Account: J3BtePxu2BkzEsP6GELUWka6GYcNNoUdfZZMMb3oy8jc
+
+✅ 1 lamport(s) transferred: seq=0   time= 803ms signature=62NA9YSEp17Chz18SUFZdSAQBXh4qadK2kboUwXbXSQy1EKSFpF4BdzXA8gZSTeJBwnJgFh41y4emCoFBUjz7a4u
+✅ 2 lamport(s) transferred: seq=1   time= 401ms signature=3H4oQ7ntttUonCWHwNCAF7QVsiz4gMRKNykUzUaYnLisrvDT1RAzCpoh8xQW5tL9E3Ch1QmdJipzoSwd9kF9JcLi
+✅ 3 lamport(s) transferred: seq=2   time=1405ms signature=3AgxHTaG6EaKuBtz9SnjJJZ87XxbA5HWdRqLHRTP9VMiSjCUtNBmJU7DSze9KKh2nMkRGkJJmvH7VNGvKHEE4tZs
+✅ 4 lamport(s) transferred: seq=3   time=2810ms signature=YLAEWCSLtN9MU4wakkYT5yH1gxoTVEG4TPb5a29NX8h1V6sWnffYcKqKkRveGsH9xX9D5KCNbZGRsuLZwMtwkdq
+✅ 5 lamport(s) transferred: seq=4   time=1003ms signature=253VPcgQTsrkAQkvLR9qUfbEcPeGNvTvdMqfkQRJTo9P1K8ydHovFSPY6zvbHLVT1iwnPqyRYtqkm2avGq3tNhhS
+✅ 6 lamport(s) transferred: seq=5   time= 802ms signature=44VQRvweaFQDrW6Q8cD8BNPRXu4gwr247uxFSvHC9qcV2Zz9cRqL4JefYnS6HuKawdfRwCvtctA8sHTraYN2CHtG
+✅ 7 lamport(s) transferred: seq=6   time=1204ms signature=3ACT4KCMPmZCDiDQgeMwzvx2dzC5rLiMMspyDpUETVvgKne1Ec7sPPvoYkyaGoW2t8bjLNFxcsNPGmYBoEGXQSwj
+✅ 8 lamport(s) transferred: seq=7   time= 802ms signature=3BNR8P2rSbAth9yCR5bH1vy91zdhAbuHJkqgJqzp8fNjqbeLXKtwBRCwt67aXkCm8sEk3Z23BCsUDopPwSXnXgJm
+✅ 9 lamport(s) transferred: seq=8   time=1204ms signature=5CVoDBLj7wbzEu2Jv4ujoAaZ3c3MwMq1mVEyyNn47RFCiqj2QjHFu7EQuNHq7Bxiqg94nAsvjgNc924aprLs7zLD
+✅ 10 lamport(s) transferred: seq=9   time=1003ms signature=5Hr9yY2noUuWDtG2YvoP42LTHkJmNguERPiMLeNYyp97u2X83R1mWTrczXp4jyEtSzrhv3RYNVX4AERbGYzoyWVc
+✅ 11 lamport(s) transferred: seq=10  time= 803ms signature=3vbYpgpT46FTGRNnexBLaneaELPc4KAosZjYit6cdutFdk61SkbSz121ze2qFjrSrjNpBUoT4DF8ds9JKVNcCAp
+✅ 12 lamport(s) transferred: seq=11  time=1003ms signature=2efgqiAdnnjL6YRU6MMTGXnZHUX8TW7Nzc6uESng7kgENjnYtCTFDF4dD7q3bxPyA4EeF3exTv2eXEjG15fLx3Am
+✅ 13 lamport(s) transferred: seq=12  time= 803ms signature=41EAVqyBUbLipTt78jJNMBT9rDS6pisu4dAtK6UD9oowAHxKsnTnisY6sDZRX2TH78fmpTouUU74AobwEEyF4fGu
+✅ 14 lamport(s) transferred: seq=13  time=1003ms signature=4J3R9yAp4HzZ153TUYwgBxUhXkGK5FRGeQoWVQEbfWT4QzJrgQmuxi1Z88P1gnZS4Xxb9NKTh8VQMFtc6EhnCYBR
+✅ 15 lamport(s) transferred: seq=14  time=1003ms signature=619BzpyxSs8dotuJKGpprrMEEC27Beg6Hv67bebRNjjsk9TR9JzqWdj9F3AS36z2TBx7oz4Toq5zQB2SeKLjsdHA
+✅ 16 lamport(s) transferred: seq=15  time=1003ms signature=3rshQ9nrXu98tjaZJnnwV3f5XFanmyhfMcPiTt464LUnCuL8nuYMdSB2Bo4RN5j8Nm7AtaDRJMTP3omN8YkhQxqp
+✅ 17 lamport(s) transferred: seq=16  time= 803ms signature=5wopejDGtWtWf5h4xobK6bAD2PoSu7HBi4D9iGiVqe5a4VF7ckepQmurYuXUMF7rqZ87BoHWmNT1kDn6vynAppgL
+✅ 18 lamport(s) transferred: seq=17  time=1204ms signature=4jG56B3FGi39VCNZx6irG4tHLMdJbTzsY437XvbYqfEG8HUGuFAB1ELgCp63z7DYXMeVrdANXKmzwVNEeGxFNemN
+✅ 19 lamport(s) transferred: seq=18  time= 803ms signature=LHutJ5vHodrBMAMRUJ2du5gg6Xpj72LrvhFWXVCiaT2ZBkzWkQokhJXFRyZyZbySsJfNxPtqtHgVoVekotqeouW
+❌ Submit failed:         seq=19  error="RPC response error -32002: Transaction simulation failed: Blockhash not found "
+❌ Submit failed:         seq=20  error="RPC response error -32002: Transaction simulation failed: Blockhash not found "
+✅ 1 lamport(s) transferred: seq=21  time= 602ms signature=3ebhmFvzgWv1MkMue6JvSWCbdBUrsGeNh1mimc6iiFGDFWce7pcUhYnmRqCrAhFc7HwmPDC6pzPBzW8PB7HcBNuA
+✅ 2 lamport(s) transferred: seq=22  time= 602ms signature=53xZz6UT5AekjELy1XJPVav7zRtjL5uofRDvS6oCr21gju5pxbM7RXLQwGmXgyMoRwsFng3zTb62xVdNKs95Q6E3
+✅ 3 lamport(s) transferred: seq=23  time=1003ms signature=5WK1AwF7RPygFWJrYMPHKdMVL9Gspmscnku7qDKmCh8EU7BwQzxQaCFDbASHETYEYeihGFbd7Kyrr76JoPWBBYDi
+✅ 4 lamport(s) transferred: seq=24  time= 803ms signature=4ideuAQGrktHb5mj2SXXnx8GRE2PeFYmhQfkcrbfLQTX1uLCLSsZWLD5rwsE4x9dtMufPxGbustYDfj9coPRMS61
+✅ 5 lamport(s) transferred: seq=25  time=1003ms signature=5xYVUCk25vAqvTdRpqz2km9aAjnAYFvsrEtFaoVN7KJRRxXt6wMVeeNBu55aJxm2zbFWy9598hap2xyXwzbdoBHE
+✅ 6 lamport(s) transferred: seq=26  time=1003ms signature=2JoRLXZeVUwgPX1o7SH1AXCKGfXYiMw5DJVZZAaccSqpvgy2gh1kVqWLDkEKi4aqZ8YuBQ4XNFBj6CWCWn7VzLvw
+
+--- transaction statistics ---
+27 transactions submitted, 25 transactions confirmed, 7.4% transaction loss
+confirmation min/mean/max/stddev = 401/995/2810/435 ms
+
