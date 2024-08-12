@@ -1,0 +1,20 @@
+npm install express child_process
+npm start
+
+
+builder@node0:~/pinger$ curl http://localhost:3334/ping_times | jq
+{
+  "average": 1143.6,
+  "pingTimes": [
+    803,
+    1003,
+    1003,
+    803,
+    1203,
+    1003,
+    1003,
+    803,
+    1003,
+    2809
+  ]
+}
