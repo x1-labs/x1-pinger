@@ -13,7 +13,7 @@ function calculateSlidingAverage() {
 
 // Function to start running `solana ping` and capturing its output
 function startSolanaPing() {
-    const pingProcess = spawn('solana', ['ping', '-c', '100']);
+    const pingProcess = spawn('solana', ['ping']);
 
     // Process the ping output from stderr
     pingProcess.stderr.on('data', (data) => {
