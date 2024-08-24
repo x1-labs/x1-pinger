@@ -8,7 +8,22 @@ let pingTimes = [];
 // Function to calculate the sliding average
 function calculateSlidingAverage() {
     const sum = pingTimes.reduce((a, b) => a + b, 0);
-    return (pingTimes.length > 0) ? sum / pingTimes.length : 0;
+    const average = (pingTimes.length > 0) ? sum / pingTimes.length : 0;
+    return Math.round(average); // Round the average to the nearest whole number
+}
+
+// Function to calculate the median
+function calculateMedian() {
+    if (pingTimes.length === 0) return 0;
+
+    const sorted = [...pingTimes].sort((a, b) => a - b);
+    const middle = Math.floor(sorted.length / 2);
+
+    if (sorted.length % 2 === 0) {
+        return Math.round((sorted[middle - 1] + sorted[middle]) / 2);
+    } else {
+        return sorted[middle];
+    }
 }
 
 // Function to start running `solana ping` and capturing its output
@@ -43,10 +58,11 @@ function startSolanaPing() {
     });
 }
 
-// Endpoint to get the current sliding average and ping times
+// Endpoint to get the current sliding average, median, and ping times
 app.get('/ping_times', (req, res) => {
     const average = calculateSlidingAverage();
-    res.json({ average: average, pingTimes: pingTimes });
+    const median = calculateMedian();
+    res.json({ average: average, median: median, pingTimes: pingTimes });
 });
 
 // Start the server

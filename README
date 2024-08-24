@@ -4,17 +4,15 @@ npm start
 
 builder@node0:~/pinger$ curl http://localhost:3334/ping_times | jq
 {
-  "average": 1143.6,
+  "average": 946,
+  "median": 1003,
   "pingTimes": [
-    803,
-    1003,
-    1003,
-    803,
-    1203,
-    1003,
-    1003,
-    803,
-    1003,
-    2809
+    602,
+    802,
+    602,
+    1204,
+    1004,
+    1406,
+    1003
   ]
 }
