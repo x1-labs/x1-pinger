@@ -26,6 +26,15 @@ function calculateMedian() {
     }
 }
 
+// Function to calculate the 90th percentile (P90)
+function calculateP90() {
+    if (pingTimes.length === 0) return 0;
+
+    const sorted = [...pingTimes].sort((a, b) => a - b);
+    const index = Math.floor(0.9 * sorted.length);
+    return sorted[index];
+}
+
 // Function to start running `solana ping` and capturing its output
 function startSolanaPing() {
     const pingProcess = spawn('solana', ['ping']);
@@ -58,11 +67,12 @@ function startSolanaPing() {
     });
 }
 
-// Endpoint to get the current sliding average, median, and ping times
+// Endpoint to get the current sliding average, median, P90, and ping times
 app.get('/ping_times', (req, res) => {
     const average = calculateSlidingAverage();
     const median = calculateMedian();
-    res.json({ average: average, median: median, pingTimes: pingTimes });
+    const p90 = calculateP90();
+    res.json({ average: average, median: median, p90: p90, pingTimes: pingTimes });
 });
 
 // Start the server
