@@ -35,6 +35,12 @@ function calculateP90() {
     return sorted[index];
 }
 
+// Function to calculate the minimum value
+function calculateMin() {
+    if (pingTimes.length === 0) return 0;
+    return Math.min(...pingTimes);
+}
+
 // Function to start running `solana ping` and capturing its output
 function startSolanaPing() {
     const pingProcess = spawn('solana', ['ping']);
@@ -67,12 +73,13 @@ function startSolanaPing() {
     });
 }
 
-// Endpoint to get the current sliding average, median, P90, and ping times
+// Endpoint to get the current sliding average, median, P90, minimum value, and ping times
 app.get('/ping_times', (req, res) => {
     const average = calculateSlidingAverage();
     const median = calculateMedian();
     const p90 = calculateP90();
-    res.json({ average: average, median: median, p90: p90, pingTimes: pingTimes });
+    const min = calculateMin();
+    res.json({ average: average, median: median, p90: p90, min: min, pingTimes: pingTimes });
 });
 
 // Start the server
