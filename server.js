@@ -1,5 +1,6 @@
 const express = require('express');
 const { spawn } = require('child_process');
+const net = require('net');
 const app = express();
 const port = 3334;
 
@@ -41,9 +42,42 @@ function calculateMin() {
     return Math.min(...pingTimes);
 }
 
+// Function to check if localhost:8899 is up
+function isLocalhost8899Up() {
+    return new Promise((resolve) => {
+        const socket = new net.Socket();
+        socket.setTimeout(1000);  // 1 second timeout
+
+        socket.on('connect', () => {
+            socket.destroy();
+            resolve(true);
+        });
+
+        socket.on('timeout', () => {
+            socket.destroy();
+            resolve(false);
+        });
+
+        socket.on('error', () => {
+            resolve(false);
+        });
+
+        socket.connect(8899, 'localhost');
+    });
+}
+
 // Function to start running `solana ping` and capturing its output
-function startSolanaPing() {
-    const pingProcess = spawn('solana', ['ping']);
+async function startSolanaPing() {
+    const isLocalUp = await isLocalhost8899Up();
+    const pingArgs = isLocalUp ? ['ping', '-u', 'http://localhost:8899'] : ['ping'];
+    
+    if (!isLocalUp) {
+        console.log('Local RPC (localhost:8899) is down. Using default Solana RPC.');
+    } else {
+        console.log('Local RPC (localhost:8899) is up. Using local RPC for pinging.');
+    }
+
+    const pingProcess = spawn('solana', pingArgs);
 
     // Process the ping output from stderr
     pingProcess.stderr.on('data', (data) => {
@@ -87,4 +121,3 @@ app.listen(port, () => {
     console.log(`Server running on port ${port}`);
     startSolanaPing(); // Start the ping process when the server starts
 });
-
