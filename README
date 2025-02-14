@@ -1,8 +1,15 @@
-npm install express child_process
+# X1 Pinger
+
+## Installation
+```bash
+npm install
 npm start
+```
 
+## Usage
 
-builder@node0:~/pinger$ curl http://localhost:3334/ping_times | jq
+```bash
+curl http://localhost:3334/ping_times | jq
 {
   "average": 946,
   "median": 1003,
@@ -16,3 +23,4 @@ builder@node0:~/pinger$ curl http://localhost:3334/ping_times | jq
     1003
   ]
 }
+```

@@ -1,0 +1,16 @@
+[Unit]
+Description=X1 Pinger Service
+After=network.target
+
+[Service]
+WorkingDirectory=/home/ubuntu/pinger
+ExecStart=/usr/bin/node server.js
+Restart=always
+User=ubuntu
+Environment=NODE_ENV=production
+SyslogIdentifier=x1-pinger
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
