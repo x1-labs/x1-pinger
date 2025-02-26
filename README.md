@@ -6,6 +6,13 @@ npm install
 npm start
 ```
 
+For proper working as a x1-pinger service
+```bash
+ln -s /home/ubuntu/tachyon/targer/release/solana /bin
+systemctl start x1-pinger
+systemctl enable x1-pinger
+```
+
 ## Usage
 
 ```bash
