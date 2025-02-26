@@ -3,7 +3,7 @@ Description=X1 Pinger Service
 After=network.target
 
 [Service]
-WorkingDirectory=/home/ubuntu/pinger
+WorkingDirectory=/home/ubuntu/x1-pinger
 ExecStart=/usr/bin/node server.js
 Restart=always
 User=ubuntu
